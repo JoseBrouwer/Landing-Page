@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -20,10 +20,15 @@ header {
 .logo-text {
     font-size: 24px;
     color: #f9faf8;
+    margin-left: 10%;
+}
+.links {
+    margin-right: 5%;
 }
 .link-text {
     font-size: 18px;
     color: #e5e7eb;
+    padding: 5px;
 }
 
 .hero-container {
@@ -40,9 +45,11 @@ header {
     display: block;
     align-items: center;
     margin: 5px;
+    margin-left: 10%;
 }
 .block-centered div {
     padding: 5px;
+    max-width: 50%;
 }
 .block-centered button {
     padding: 5px;
@@ -59,12 +66,17 @@ header {
 }
 .signup {
     background-color: #3882f6;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #e5e7eb;
+    cursor: pointer;
+
+    width: 100px;
+    font-weight: 900;
 }
 .hero-image {
     width: 30%;
     height: auto;
+    max-height: 300px;
     margin: 20px;
 }
 
@@ -77,14 +89,32 @@ header {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+    
     margin: 0 auto;
+    padding: 20px;
 }
 .gallery-item-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    padding: 20px;
 }
 .gallery-item {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    align-items: center;
+}
+.gallery-image {
+    border: 3px solid #3882f6;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+.gallery-text {
+    color: #1f2937;
+    max-width: 190px;
+    text-align: center;
 }
 
 .quote-container{
@@ -94,11 +124,30 @@ header {
     flex-direction: column;
 }
 .quote {
+    width: 50%;
+
     margin: 0 auto;
+    padding: 20px;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
 }
 .signed {
+    align-self: flex-end; /* Align the signature to the right */
+    margin-right: 30%; /* Match the padding or alignment of the quote */
+    padding-bottom: 20px;
+    font-size: 26px;
+    color: #1f2937;
+
+    font-weight: 900;
+}
+
+footer {
+    width: 100vw;
+    background-color: #1f2937;
+    color: #f9faf8;
+
     margin: 0 auto;
+    padding: 30px;
+    text-align: center;
 }
